@@ -1,0 +1,27 @@
+Dim val As String
+private sub BINARY_click()
+        Dim tmp As String
+        Dim num As Double
+        Dim n As Double
+        num = Text1.Text
+        n = num
+        tmp = Trim(str(n mod 2))
+        n = n/2
+        Do While n<>0
+        tmp = Trim(str(n mod 2)) & tmp
+        n = n/2
+        Loop 
+        num = tmp
+        Text2.Text = str(tmp)
+End sub
+private sub END_click()
+        End
+End sub
+private sub HEXADECIMAL_click()
+        val = Hex(Text1.Text)
+        Text4.Text = val
+End sub
+private sub OCTAL_click()
+        val = Oct(Text1.Text)
+        Text3.Text = val
+End sub

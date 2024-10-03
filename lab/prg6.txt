@@ -1,0 +1,22 @@
+private sub command1_click()
+        Timer1.Enabled = True
+End sub
+private sub Form_Load()
+        Image1.visible = True
+        x = 0
+End sub
+Private sub Timer1_Timer()
+        If image1.visible = True Then
+        image1.visible = False
+        image2.visible = True
+        ElseIf image2.visible = True Then
+        image2.visible = False
+        image3.visible = True
+        ElseIf image3.visible = True Then
+        image3.visible = False
+        image4.visible = True
+        ElseIf image4.visible = True Then
+        image4.visible = False
+        image1.visible = True
+        End If
+End sub

@@ -1,7 +1,0 @@
-create table employee(emp_num NUMBER(4),emp_name VARCHAR2(30),design VARCHAR2(20),gender VARCHAR2(6),age NUMBER(5),doj DATE,salary NUMBER(7,2),PRIMARY KEY(emp_num));
-Table created.
-insert into employee values(1001,'kumar','clerk','male','35','29-SEP-2021',35000);
-1 row created.
-select * from employee where design='ceo';
-select * from employee where salary >=30000;
-select * from employee order by emp_num;
